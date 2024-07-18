@@ -342,23 +342,15 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-12 offset-lg-3">
                     <div class="full">
-                        <form class="contact_form_inner" action="enviar.php">
-                            <fieldset>
-                                <div class="name">
-                                    <input type="text" name="name" placeholder="Your name" />
-                                </div>
-                                <div class="email">
-                                    <input type="email" name="email" placeholder="Email" />
-                                </div>
-                                <div class="subject">
-                                    <input type="text" name="phone_no" placeholder="Phone number" />
-                                </div>
-                                <div class="message">
-                                    <textarea placeholder="Message"></textarea>
-                                </div>
-                                <div class="field center">
-                                    <button>SEND</button>
-                                    <button>SEND</button>
+                        <form action="enviar.php" method="post">
+                            <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
+                            <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
+                            <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
+                            <textarea name="message" class="message" placeholder="MENSAJE ... " id="message"></textarea>
+                            <div class="clear"></div>
+                                <div class="col-md-8"> 
+                                    <button type="submit" class="btn btn-primary">ENVIAR </button>
+                                    
                                 </div>
                             </fieldset>
                         </form>
